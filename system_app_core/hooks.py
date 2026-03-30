@@ -4,7 +4,6 @@ app_publisher = "saasfarers"
 app_description = "This is system core doctypes"
 app_email = "saasfarers@gmail.com"
 app_license = "mit"
-
 # Apps
 # ------------------
 
