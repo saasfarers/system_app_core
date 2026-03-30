@@ -1,0 +1,115 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-15 19:39:48.084177",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "fund_name",
+  "fund_code",
+  "institution",
+  "fund_category",
+  "is_restricted",
+  "default_income_account",
+  "default_liabliity_account",
+  "default_expense_account",
+  "opening_balance",
+  "effective_from",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "fieldname": "fund_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fund Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fund_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fund Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "institution",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Institution",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fund_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fund Category",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_restricted",
+   "fieldtype": "Check",
+   "label": "Is Restricted"
+  },
+  {
+   "fieldname": "default_income_account",
+   "fieldtype": "Data",
+   "label": "Default Income Account"
+  },
+  {
+   "fieldname": "default_liabliity_account",
+   "fieldtype": "Data",
+   "label": "Default Liabliity Account"
+  },
+  {
+   "fieldname": "default_expense_account",
+   "fieldtype": "Data",
+   "label": "Default Expense Account"
+  },
+  {
+   "fieldname": "opening_balance",
+   "fieldtype": "Currency",
+   "label": "Opening Balance"
+  },
+  {
+   "fieldname": "effective_from",
+   "fieldtype": "Date",
+   "label": "Effective From",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-30 21:54:11.565626",
+ "modified_by": "Administrator",
+ "module": "System App Core",
+ "name": "Fund Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

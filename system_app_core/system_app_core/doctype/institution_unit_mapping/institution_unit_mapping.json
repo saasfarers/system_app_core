@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-21 15:53:41.950305",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "unit_name",
+  "unit_type",
+  "is_financial",
+  "is_rentable",
+  "linked_institution"
+ ],
+ "fields": [
+  {
+   "fieldname": "unit_name",
+   "fieldtype": "Data",
+   "label": "Unit Name"
+  },
+  {
+   "fieldname": "unit_type",
+   "fieldtype": "Data",
+   "label": "Unit Type"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_financial",
+   "fieldtype": "Check",
+   "label": "Is Financial"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_rentable",
+   "fieldtype": "Check",
+   "label": "Is Rentable"
+  },
+  {
+   "fieldname": "linked_institution",
+   "fieldtype": "Data",
+   "label": "Linked Institution"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-21 15:55:25.171216",
+ "modified_by": "Administrator",
+ "module": "System App Core",
+ "name": "Institution Unit Mapping",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

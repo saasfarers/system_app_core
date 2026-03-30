@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-09 14:50:30.392300",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "category_name",
+  "applies_to_faith",
+  "category_code",
+  "column_break_avdr",
+  "description",
+  "section_break_hqhy",
+  "is_administrative_entity_",
+  "is_religious_entity_",
+  "column_break_fhkd",
+  "is_property_entity_",
+  "allows_financial",
+  "column_break_rdhv",
+  "allows_rental",
+  "is_active_"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "description": "Name of the Institution Category ",
+   "fieldname": "category_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Category Name ",
+   "reqd": 1,
+   "translatable": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "category_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Category Code",
+   "read_only": 1,
+   "reqd": 1,
+   "show_description_on_click": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "applies_to_faith",
+   "fieldtype": "Data",
+   "in_preview": 1,
+   "label": " Applies To Faith"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_hqhy",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_administrative_entity_",
+   "fieldtype": "Check",
+   "in_preview": 1,
+   "label": "Is Administrative Entity ?"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_religious_entity_",
+   "fieldtype": "Check",
+   "in_preview": 1,
+   "label": "Is Religious Entity ?"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_property_entity_",
+   "fieldtype": "Check",
+   "in_preview": 1,
+   "label": "Is Property Entity ?"
+  },
+  {
+   "fieldname": "column_break_rdhv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "allows_financial",
+   "fieldtype": "Check",
+   "in_preview": 1,
+   "label": "Is Financial Entity Allowed ?"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "allows_rental",
+   "fieldtype": "Check",
+   "in_preview": 1,
+   "label": "Is Rentable Allowed ?"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "1",
+   "fieldname": "is_active_",
+   "fieldtype": "Check",
+   "in_preview": 1,
+   "label": "Is Active ?"
+  },
+  {
+   "fieldname": "column_break_avdr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fhkd",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-30 21:45:36.360418",
+ "modified_by": "Administrator",
+ "module": "System App Core",
+ "name": "Institution Category Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

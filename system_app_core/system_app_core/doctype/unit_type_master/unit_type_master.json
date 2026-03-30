@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-11 10:36:49.245225",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "unit_type_name",
+  "unit_code",
+  "description",
+  "section_break_qbte",
+  "category",
+  "is_rentable",
+  "is_financial_unit",
+  "column_break_pthr",
+  "allows_booking",
+  "is_active"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "unit_type_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Unit Type Name",
+   "reqd": 1,
+   "translatable": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "unit_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "Unit Code",
+   "read_only": 1,
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_preview": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_qbte",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "in_preview": 1,
+   "label": "Category",
+   "options": "Religious\nCommercial\nResidential\nEducational\nLand",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_rentable",
+   "fieldtype": "Check",
+   "in_preview": 1,
+   "label": "Is Rentable ?"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "is_financial_unit",
+   "fieldtype": "Check",
+   "in_preview": 1,
+   "label": "Is Financial Unit ?"
+  },
+  {
+   "fieldname": "column_break_pthr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "allows_booking",
+   "fieldtype": "Check",
+   "in_preview": 1,
+   "label": "Allows Booking "
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "in_preview": 1,
+   "label": "Is Active "
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-30 21:53:00.087911",
+ "modified_by": "Administrator",
+ "module": "System App Core",
+ "name": "Unit Type Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

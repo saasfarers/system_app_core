@@ -1,0 +1,215 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-14 15:39:20.270752",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "basic_information_section",
+  "fund_category_name",
+  "fund_category_id",
+  "short_code",
+  "description",
+  "is_active",
+  "fund_classification_section",
+  "fund_nature",
+  "restriction_type",
+  "income_type",
+  "recurrence_type",
+  "faith_applicability",
+  "section_break_cxlo",
+  "financial_control_flag_column",
+  "fund_nature_copy",
+  "restriction_type_copy",
+  "income_type_copy",
+  "recurrence_type_copy",
+  "faith_applicability_copy",
+  "section_break_ywdf",
+  "linked_to_event_types",
+  "requires_event_referance",
+  "requires_donor_declaration",
+  "supports_anonymous_donation",
+  "section_break_ibcc",
+  "default_income_account",
+  "default__expense_account",
+  "default_liabliity_account",
+  "default_cost_center"
+ ],
+ "fields": [
+  {
+   "fieldname": "basic_information_section",
+   "fieldtype": "Section Break",
+   "label": "Basic Information"
+  },
+  {
+   "fieldname": "fund_category_name",
+   "fieldtype": "Data",
+   "label": "Fund Category Name"
+  },
+  {
+   "fieldname": "fund_category_id",
+   "fieldtype": "Data",
+   "label": "Fund category ID"
+  },
+  {
+   "fieldname": "short_code",
+   "fieldtype": "Data",
+   "label": "Short Code"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "default": "1",
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active"
+  },
+  {
+   "fieldname": "fund_classification_section",
+   "fieldtype": "Section Break",
+   "label": "Fund Classification "
+  },
+  {
+   "fieldname": "fund_nature",
+   "fieldtype": "Select",
+   "label": "Fund Nature"
+  },
+  {
+   "fieldname": "restriction_type",
+   "fieldtype": "Select",
+   "label": "Restriction Type"
+  },
+  {
+   "fieldname": "income_type",
+   "fieldtype": "Select",
+   "label": "Income Type"
+  },
+  {
+   "fieldname": "recurrence_type",
+   "fieldtype": "Select",
+   "label": "Recurrence Type "
+  },
+  {
+   "fieldname": "faith_applicability",
+   "fieldtype": "Data",
+   "label": "Faith Applicability"
+  },
+  {
+   "fieldname": "section_break_cxlo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "financial_control_flag_column",
+   "fieldtype": "Column Break",
+   "label": "Financial Control Flag"
+  },
+  {
+   "fieldname": "fund_nature_copy",
+   "fieldtype": "Select",
+   "label": "Fund Nature Copy"
+  },
+  {
+   "fieldname": "restriction_type_copy",
+   "fieldtype": "Select",
+   "label": "Restriction Type Copy"
+  },
+  {
+   "fieldname": "income_type_copy",
+   "fieldtype": "Select",
+   "label": "Income Type Copy"
+  },
+  {
+   "fieldname": "recurrence_type_copy",
+   "fieldtype": "Select",
+   "label": "Recurrence Type Copy "
+  },
+  {
+   "fieldname": "faith_applicability_copy",
+   "fieldtype": "Data",
+   "label": "Faith Applicability Copy"
+  },
+  {
+   "fieldname": "section_break_ywdf",
+   "fieldtype": "Section Break",
+   "label": "Event & Usage Behaviour"
+  },
+  {
+   "fieldname": "linked_to_event_types",
+   "fieldtype": "Data",
+   "label": "Linked to Event Types"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_event_referance",
+   "fieldtype": "Check",
+   "label": "Requires Event Referance"
+  },
+  {
+   "default": "0",
+   "fieldname": "requires_donor_declaration",
+   "fieldtype": "Check",
+   "label": "Requires Donor Declaration"
+  },
+  {
+   "default": "0",
+   "fieldname": "supports_anonymous_donation",
+   "fieldtype": "Check",
+   "label": "Supports Anonymous Donation"
+  },
+  {
+   "fieldname": "section_break_ibcc",
+   "fieldtype": "Section Break",
+   "label": "Default Accounting Mapping"
+  },
+  {
+   "fieldname": "default_income_account",
+   "fieldtype": "Data",
+   "label": "Default Income Account"
+  },
+  {
+   "fieldname": "default__expense_account",
+   "fieldtype": "Data",
+   "label": "Default  Expense Account"
+  },
+  {
+   "fieldname": "default_liabliity_account",
+   "fieldtype": "Data",
+   "label": "Default Liabliity Account"
+  },
+  {
+   "fieldname": "default_cost_center",
+   "fieldtype": "Data",
+   "label": "Default Cost Center"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-30 21:53:40.112429",
+ "modified_by": "Administrator",
+ "module": "System App Core",
+ "name": "Fund Category Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
