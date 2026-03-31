@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-22 15:42:59.204527",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "organisation_section",
+  "legal_name",
+  "business_type",
+  "column_break_ubil",
+  "registration_no",
+  "is_religious_org",
+  "column_break_dqnq",
+  "tax_id",
+  "column_break_wyji",
+  "contact_person"
+ ],
+ "fields": [
+  {
+   "fieldname": "organisation_section",
+   "fieldtype": "Section Break",
+   "label": "Organisation"
+  },
+  {
+   "fieldname": "legal_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Legal Name"
+  },
+  {
+   "fieldname": "business_type",
+   "fieldtype": "Select",
+   "label": "Business Type"
+  },
+  {
+   "fieldname": "column_break_ubil",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "registration_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Registration No"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_religious_org",
+   "fieldtype": "Check",
+   "label": "Is Religious Org"
+  },
+  {
+   "fieldname": "column_break_dqnq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tax ID"
+  },
+  {
+   "fieldname": "column_break_wyji",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Link",
+   "label": "Contact Person",
+   "options": "Party Master"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-03-22 17:19:21.040563",
+ "modified_by": "Administrator",
+ "module": "System App Core",
+ "name": "Organisation",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
