@@ -1,0 +1,371 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-20 14:27:14.851467",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "core_structure_section",
+  "institution_id",
+  "institution_name",
+  "institution_category",
+  "faith",
+  "parent_institution",
+  "hierarchy_level",
+  "column_break_ymma",
+  "institution_code",
+  "status",
+  "time_zone",
+  "address",
+  "contact",
+  "institution_logo",
+  "capability_matrix_section",
+  "is_financially_autonomous",
+  "is_donation_accepting_unit",
+  "is_expense_booking_unit",
+  "supports_multi_fund_accounting",
+  "column_break_zgvd",
+  "is_rentable_asset_holder",
+  "is_operational_unit",
+  "is_record_only_unit",
+  "can_own_assets",
+  "column_break_zecm",
+  "can_run_educational_programs",
+  "has_volunteer_network",
+  "has_paid_staff",
+  "financial_configuration_section",
+  "default_currency",
+  "cost_center",
+  "allow_independent_budgeting",
+  "column_break_dbmh",
+  "default_donation_fund",
+  "default_expense_fund",
+  "allow_independent_bank_accounts",
+  "legal_identity_section",
+  "is_registered_legal_entity",
+  "legal_structure_type",
+  "legal_name",
+  "registration_number",
+  "column_break_fmcy",
+  "tax_id",
+  "country",
+  "year_established",
+  "governance_section",
+  "governance_type",
+  "head_of_institution",
+  "governing_body_name",
+  "column_break_kunl",
+  "number_of_trustees",
+  "election_cycle"
+ ],
+ "fields": [
+  {
+   "fieldname": "core_structure_section",
+   "fieldtype": "Section Break",
+   "label": "Core Structure"
+  },
+  {
+   "fieldname": "institution_id",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "label": "Institution ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "institution_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Institution Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "institution_category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Institution Category",
+   "reqd": 1
+  },
+  {
+   "fieldname": "faith",
+   "fieldtype": "Data",
+   "label": "Faith"
+  },
+  {
+   "fieldname": "parent_institution",
+   "fieldtype": "Data",
+   "label": "Parent Institution"
+  },
+  {
+   "fieldname": "hierarchy_level",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Hierarchy Level ",
+   "non_negative": 1,
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ymma",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "institution_code",
+   "fieldtype": "Data",
+   "label": "Institution Code",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "reqd": 1
+  },
+  {
+   "fieldname": "time_zone",
+   "fieldtype": "Data",
+   "label": "Time Zone",
+   "reqd": 1
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "contact",
+   "fieldtype": "Data",
+   "label": "Contact"
+  },
+  {
+   "fieldname": "institution_logo",
+   "fieldtype": "Attach Image",
+   "label": "Institution Logo"
+  },
+  {
+   "fieldname": "capability_matrix_section",
+   "fieldtype": "Section Break",
+   "label": "Capability Matrix"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_financially_autonomous",
+   "fieldtype": "Check",
+   "label": "Is Financially Autonomous "
+  },
+  {
+   "default": "0",
+   "fieldname": "is_donation_accepting_unit",
+   "fieldtype": "Check",
+   "label": "Is Donation Accepting Unit"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_expense_booking_unit",
+   "fieldtype": "Check",
+   "label": "Is Expense Booking Unit"
+  },
+  {
+   "default": "0",
+   "fieldname": "supports_multi_fund_accounting",
+   "fieldtype": "Check",
+   "label": "Supports Multi Fund Accounting "
+  },
+  {
+   "default": "0",
+   "fieldname": "is_rentable_asset_holder",
+   "fieldtype": "Check",
+   "label": "Is Rentable Asset Holder"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_operational_unit",
+   "fieldtype": "Check",
+   "label": "Is Operational Unit"
+  },
+  {
+   "fieldname": "column_break_zecm",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_record_only_unit",
+   "fieldtype": "Check",
+   "label": "Is Record Only Unit"
+  },
+  {
+   "default": "0",
+   "fieldname": "can_own_assets",
+   "fieldtype": "Check",
+   "label": "Can Own Assets"
+  },
+  {
+   "default": "0",
+   "fieldname": "can_run_educational_programs",
+   "fieldtype": "Check",
+   "label": "Can Run Educational Programs"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_volunteer_network",
+   "fieldtype": "Check",
+   "label": "Has Volunteer Network"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_paid_staff",
+   "fieldtype": "Check",
+   "label": "Has Paid Staff"
+  },
+  {
+   "fieldname": "financial_configuration_section",
+   "fieldtype": "Section Break",
+   "label": "Financial Configuration"
+  },
+  {
+   "fieldname": "default_currency",
+   "fieldtype": "Data",
+   "label": "Default Currency"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Data",
+   "label": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_zgvd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "default_donation_fund",
+   "fieldtype": "Data",
+   "label": "Default Donation Fund "
+  },
+  {
+   "fieldname": "default_expense_fund",
+   "fieldtype": "Data",
+   "label": "Default Expense Fund"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_independent_budgeting",
+   "fieldtype": "Check",
+   "label": "Allow Independent Budgeting"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_independent_bank_accounts",
+   "fieldtype": "Check",
+   "label": "Allow Independent Bank Accounts"
+  },
+  {
+   "fieldname": "legal_identity_section",
+   "fieldtype": "Section Break",
+   "label": "Legal Identity"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_registered_legal_entity",
+   "fieldtype": "Check",
+   "label": "Is Registered Legal Entity"
+  },
+  {
+   "fieldname": "legal_structure_type",
+   "fieldtype": "Data",
+   "label": "Legal Structure Type "
+  },
+  {
+   "fieldname": "legal_name",
+   "fieldtype": "Data",
+   "label": "Legal Name"
+  },
+  {
+   "fieldname": "registration_number",
+   "fieldtype": "Data",
+   "label": "Registration Number"
+  },
+  {
+   "fieldname": "tax_id",
+   "fieldtype": "Data",
+   "label": "Tax ID"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "year_established",
+   "fieldtype": "Int",
+   "label": "Year Established"
+  },
+  {
+   "fieldname": "governance_section",
+   "fieldtype": "Section Break",
+   "label": "Governance"
+  },
+  {
+   "fieldname": "governance_type",
+   "fieldtype": "Data",
+   "label": "Governance Type"
+  },
+  {
+   "fieldname": "head_of_institution",
+   "fieldtype": "Data",
+   "label": "Head Of Institution"
+  },
+  {
+   "fieldname": "governing_body_name",
+   "fieldtype": "Data",
+   "label": "Governing Body Name"
+  },
+  {
+   "fieldname": "number_of_trustees",
+   "fieldtype": "Int",
+   "label": "Number Of Trustees"
+  },
+  {
+   "fieldname": "election_cycle",
+   "fieldtype": "Data",
+   "label": "Election Cycle"
+  },
+  {
+   "fieldname": "column_break_dbmh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_fmcy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kunl",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-30 21:42:18.956083",
+ "modified_by": "Administrator",
+ "module": "System App Core",
+ "name": "Institution Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
